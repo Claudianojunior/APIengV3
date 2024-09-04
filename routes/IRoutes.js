@@ -14,6 +14,10 @@ class IRoutes {
    listen(){
      
    }
+
+   delete(){
+      
+   }
   
 }
 module.exports = IRoutes;

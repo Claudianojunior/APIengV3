@@ -8,7 +8,7 @@ const User = require('../models/User');
 class UserDAO_Mongoose extends IUserDAO{
 
    constructor(){ super();
-  mongoose.connect('mongodb+srv://vaguetti:dwm20221@cluster0.004qy.mongodb.net/myFirstDatabase?retryWrites=true&w=majority',{
+  mongoose.connect('mongodb+srv://engsoftifb:engs0ft!@engsoft.gzjzg.mongodb.net/?retryWrites=true&w=majority&appName=engsoft',{
      useNewUrlParser: true,
      useUnifiedTopology: true
 });
@@ -29,7 +29,7 @@ class UserDAO_Mongoose extends IUserDAO{
        
      }
      async delete(req){
-        let user = await    User.findByIdAndRemove(req.params.id);
+        let user = await User.findByIdAndRemove(req.params.id);
         return user; 
      } 
   
